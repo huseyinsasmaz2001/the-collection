@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -5,7 +6,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,900&family=Oswald:wght@700&display=swap");
+@import url("https://www.fontspace.com/avenge-font-f84501");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -309,9 +310,14 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: "Avenge"; /* Nom de votre police */
+  src: url("font/AvengeRegular-Yzdxy.ttf") format("truetype"); /* Chemin vers votre fichier de police */
+  /* Ajoutez d'autres formats si nécessaire pour une meilleure compatibilité */
+}
 html, body {
   width: 100%;
-  font-family: "Anton", sans-serif;
+  font-family: "Avenge", sans-serif;
   background: linear-gradient(blue, #ED1C24);
   background-repeat: no-repeat;
   background-size: cover;
@@ -322,16 +328,19 @@ body header {
   height: auto;
   padding: 20px 0 20px 0;
   background-image: url(asset/versus1.jpg);
-  text-shadow: 4px 4px 4px blue;
+  text-shadow: 4px 4px 4px #ED1C24;
   background-size: cover;
-  color: #FFD700;
+  color: white;
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: black;
 }
 body header h1 {
   text-align: center;
+  font-size: 50px;
 }
 body header p {
   text-align: left;
-  font-size: 20px;
+  font-size: 35px;
   font-weight: 600;
   margin-left: 20px;
 }
@@ -347,6 +356,29 @@ body header .avatar {
   display: block;
   margin: 0 auto;
 }
+body header ul {
+  display: flex;
+}
+body header ul button {
+  /* Vos styles de base pour les boutons */
+  background-color: #ED1C24;
+  color: white;
+  border: none;
+  padding: 5px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+}
+body header ul button:hover {
+  /* Styles pour l'effet hover */
+  background-color: #FFD700;
+  color: #ED1C24;
+}
 body main {
   min-height: 620px;
   width: 100%;
@@ -360,6 +392,7 @@ body main {
 }
 body main article {
   background: linear-gradient(blue, #ED1C24);
+  text-shadow: 4px 4px 4px blue;
   width: 90%;
   height: 600px;
   border: solid #FFD700 5px;
@@ -373,28 +406,44 @@ body main article:hover {
   transform: scale(1.1);
   position: relative;
 }
-body main article h2, body main article h3, body main article h4 {
+body main article h2 {
+  font-size: 25px;
   text-align: center;
   font-weight: normal;
+}
+body main article h3 {
+  font-size: 18px;
+  text-align: center;
+  font-weight: normal;
+}
+body main article h4 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 18px;
 }
 body main article h5 {
   text-align: center;
   font-weight: normal;
+  font-size: 18px;
 }
 body main article p {
-  padding: 15px;
   text-align: center;
-  font-weight: 400;
+  font-size: 20px;
+}
+body main article img {
+  width: 30px;
+  padding: 5px;
+  position: absolute;
 }
 body main section {
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   border-radius: 50%;
   align-items: center;
-  margin-left: 22px;
+  margin-left: 50px;
 }
 
 @media screen and (min-width: 576px) {

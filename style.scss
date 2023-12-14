@@ -1,10 +1,16 @@
 @import 'reset';
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,900&family=Oswald:wght@700&display=swap');
+@import url('https://www.fontspace.com/avenge-font-f84501');
+
+@font-face {
+    font-family: 'Avenge'; /* Nom de votre police */
+    src: url('font/AvengeRegular-Yzdxy.ttf') format('truetype'); /* Chemin vers votre fichier de police */
+    /* Ajoutez d'autres formats si nécessaire pour une meilleure compatibilité */
+  }
 
 html, body {
     width: 100%;
     // height: 100vh;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Avenge', sans-serif;
     background: linear-gradient(blue ,#ED1C24 );
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,18 +26,22 @@ body {
         padding: 20px 0 20px 0;
         // background: linear-gradient(#ED1C24 , blue);
         background-image: url(asset/versus1.jpg);
-        text-shadow: 4px 4px 4px blue;
+        text-shadow: 4px 4px 4px #ED1C24;
         background-size:cover ;
-        color: #FFD700;
+        color: white;
+        -webkit-text-stroke-width: 0.3px;
+        -webkit-text-stroke-color: black
+        ;
        
         
         h1 {
             text-align: center;
+            font-size: 50px;
             
         }
         p {
             text-align: left;
-            font-size: 20px;
+            font-size: 35px;
             font-weight: 600;
             margin-left: 20px;
         }
@@ -49,6 +59,30 @@ body {
             margin: 0 auto;
         
         }
+        ul{
+            display: flex;
+        button {
+            /* Vos styles de base pour les boutons */
+            background-color: #ED1C24;
+            color: white;
+            border: none;
+            padding: 5px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline;
+            font-size: 20px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition-duration: 0.4s;
+          }
+          
+          button:hover {
+            /* Styles pour l'effet hover */
+            background-color: #FFD700;
+            color: #ED1C24;
+          }
+        }
 }
 
     main {
@@ -63,6 +97,7 @@ body {
         color: #FFD700;
             article {
                 background: linear-gradient(blue ,#ED1C24 );
+                text-shadow: 4px 4px 4px blue;
 
                 width: 90%;
                 height: 600px;
@@ -71,37 +106,59 @@ body {
                 margin: 10px auto;
                 box-shadow: 4px 4px 4px #FFD700;
                 transition: all (0.4) ease-in-out;
+                
                 &:hover{
                     box-shadow: inset -5px -5px 8px black;
                     transform: scale(1.1);
                     position: relative;
                       
                 }
-                    h2, h3, h4{
+                    h2  {
+                        font-size: 25px;
                         text-align: center;
                         font-weight: normal;
+                    }
+                    
+                    h3 {
+                        font-size: 18px;
+                        text-align: center;
+                        font-weight: normal;
+
+                    }
+                    
+                    h4{
+                        text-align: center;
+                        font-weight: normal;
+                        font-size: 18px;
                     }
                     h5{
                         text-align: center;
                         font-weight: normal;
+                        font-size: 18px;
                     }
                     p {
                     
-                        padding: 15px;
+                       
                         text-align: center;
-                        font-weight: 400;
+                    
+                        font-size: 20px;
+                    }
+                    img{
+                        width: 30px;
+                        padding: 5px;
+                        position: absolute;
                     }
             }
             section {
      
-                height: 250px;
-                width: 250px;
+                height: 200px;
+                width: 200px;
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center center;
                 border-radius: 50%;
                 align-items: center;
-                margin-left: 22px;
+                margin-left: 50px;
             }
     }
 }
