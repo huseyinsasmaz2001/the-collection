@@ -311,8 +311,10 @@ template {
 
 html, body {
   width: 100%;
-  height: 100%;
   font-family: "Anton", sans-serif;
+  background: linear-gradient(blue, #ED1C24);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body header {
@@ -346,16 +348,18 @@ body header .avatar {
   margin: 0 auto;
 }
 body main {
-  min-height: 600px;
+  min-height: 620px;
   width: 100%;
-  background: linear-gradient(blue, #ED1C24);
+  margin-bottom: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   color: #FFD700;
 }
 body main article {
-  background-color: #ED1C24;
+  background: linear-gradient(blue, #ED1C24);
   width: 90%;
   height: 600px;
   border: solid #FFD700 5px;
@@ -365,8 +369,9 @@ body main article {
   transition: all 0.4 ease-in-out;
 }
 body main article:hover {
-  box-shadow: inset -5px -5px 8px blue;
+  box-shadow: inset -5px -5px 8px black;
   transform: scale(1.1);
+  position: relative;
 }
 body main article h2, body main article h3, body main article h4 {
   text-align: center;
