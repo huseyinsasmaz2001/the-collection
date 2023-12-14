@@ -470,4 +470,27 @@ body main section {
   header .avatar-bottombloc p {
     margin-top: 20px;
   }
+  header ul {
+    display: flex;
+  }
+  header ul button {
+    /* Vos styles de base pour les boutons */
+    background-color: #ED1C24;
+    color: white;
+    border: none;
+    padding: 5px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+  }
+  header ul button:hover {
+    /* Styles pour l'effet hover */
+    background-color: #FFD700;
+    color: #ED1C24;
+  }
 }/*# sourceMappingURL=style.css.map */

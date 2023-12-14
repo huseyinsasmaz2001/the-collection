@@ -190,5 +190,29 @@ body {
                         margin-top: 20px;
                     }
             }
+            ul{
+                display: flex;
+            button {
+                /* Vos styles de base pour les boutons */
+                background-color: #ED1C24;
+                color: white;
+                border: none;
+                padding: 5px 25px;
+                text-align: center;
+                text-decoration: none;
+                display: inline;
+                font-size: 20px;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-radius: 12px;
+                transition-duration: 0.4s;
+              }
+              
+              button:hover {
+                /* Styles pour l'effet hover */
+                background-color: #FFD700;
+                color: #ED1C24;
+              }
+            }
     }
 }
