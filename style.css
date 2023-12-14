@@ -319,7 +319,8 @@ body header {
   width: 100%;
   height: auto;
   padding: 20px 0 20px 0;
-  background-image: url(asset/oneearth2.jpg);
+  background-image: url(asset/versus1.jpg);
+  text-shadow: 4px 4px 4px blue;
   background-size: cover;
   color: #FFD700;
 }
@@ -340,13 +341,14 @@ body header .avatar {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  box-shadow: 4px 4px 4px #FFD700;
   display: block;
   margin: 0 auto;
 }
 body main {
   min-height: 600px;
   width: 100%;
-  background-color: #C11A2E;
+  background: linear-gradient(blue, #ED1C24);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -359,6 +361,12 @@ body main article {
   border: solid #FFD700 5px;
   border-radius: 3%;
   margin: 10px auto;
+  box-shadow: 4px 4px 4px #FFD700;
+  transition: all 0.4 ease-in-out;
+}
+body main article:hover {
+  box-shadow: inset -5px -5px 8px blue;
+  transform: scale(1.1);
 }
 body main article h2, body main article h3, body main article h4 {
   text-align: center;
@@ -369,7 +377,6 @@ body main article h5 {
   font-weight: normal;
 }
 body main article p {
-  height: 200px;
   padding: 15px;
   text-align: center;
   font-weight: 400;
